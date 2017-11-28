@@ -1,0 +1,138 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+title {
+  font-family: 'Bad Script', cursive;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FAEBD7;
+  color: #808080;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+#showcase {
+  height: 300px;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  line-height: 1.6;
+  position: relative;
+  animation-name: floatingdown;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+  
+}
+
+@keyframes floatingdown {
+  0% {top: -60px}
+  100% {top: 200px;}
+}
+
+#content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes content {
+  0% {left: -1000px;}
+  100% {left: 0px;}
+}
+
+.btn {
+  display: inline-block;
+  color: #808080;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: #808080 1px solid;
+  margin-top: 40px;
+  opacity:0;
+  animation-name:btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration:1s;
+}
+
+@keyframes btn {
+  0% {opacity:0;}
+  100% {opacity:1};
+}
+
+.btn:hover {
+  transform:rotateY(180deg);
+}
+
+a:link, a:visited {
+    display: inline-block;
+  color: #808080;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: #808080 1px solid;
+  margin-top: 40px;
+}
+a:hover, a:active {
+    background-color: #F0F8FF;
+}
+
+
+h2, h3 {
+margin:0 0 -.7em 0;
+}
+
+.column-layout {
+max-width:800px;
+background-color:#FAEBD7;
+margin:40px auto 0 auto;
+line-height: 3;
+padding:20px 40px;
+display: flex;
+}
+
+.main-column {
+flex:3;
+order:1;
+}
+
+.sidebar-one {
+flex:1;
+order:2;
+}
+
+.picture {
+      float:left;
+      margin-right:20px;
+      margin-left:20px;
+      height:5px;
+      width:5px;
+      padding:10px;
+}
+.call-outs-container {
+max-width:900px;
+margin:40px auto 0 auto;
+display:flex;
+justify-content: space-between;
+}
+
+.call-out {
+padding: 20px;
+margin-bottom: 20px;
+box-sizing:border-box;
+width: 30%;
+}
+
+.call-out:nth-child(1) {background-color:	#8FBC8F;}
+.call-out:nth-child(2) {background-color:	#D2B48C;}
