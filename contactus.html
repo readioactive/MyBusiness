@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+     <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Montserrat|Unica+One" rel="stylesheet">
+  </head>
+  </head>
+
+  <body>
+    <nav>
+      <a href="main.html" class="btn">Home</a>
+      <a href="pages/page1.html" class="btn">Page 1</a>
+      <a href="pages/page2.html" class="btn"><ahref="contactus.html">Contact Us</ahref></a>
+      <a href="pages/page3.html" class="btn">Products & Services</a>
+    </nav>
+
+  <div class="column-layout">
+    <div class="main-column">
+      <h1>Location</h1>
+      <p> 555 Hill Avenue<br>
+       Fond du Lac, WI 54935</p>
+       <p><b>Phone Number:</b> 555-323-9483</p>
+       <p><b>Email:</b>info@dontbenegative.com</p>
+    </div>
+
+    <div class="sidebar-two">
+      <h3>Hours of Operation</h3>
+      
+      <p><b>Mon-Fri</b> 11am - 6 pm</p>
+      <p><b>Sat</b>10am - 6pm</p>
+    </div>
+
+
+  </div>
+
+
+  <div class="call-outs-container">
+    <div class="call-out">
+      <h4>Welcome Pet Portraits!</h4>
+      <p>Treat your beloved feline to a 30% pet photography session!</p>
+    </div>
+
+    <div class="call-out">
+      <h4>Photo Book Sale</h4>
+      <p>Our photo books are 50%! Fill them with senior pictures, travel photos, anything you like! Available in red, black, and grey.</p>
+    </div>
+  </div>
+
+   <div id="map"></div>
+
+<div id="form1">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePNk_TcQEscl3qmfwWdFt7rgb1RIB273-TJbEMoYUGVhMFEw/viewform?embedded=true" width="800" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+    
+    <script>
+      function initMap() {
+        var uluru = {lat: 41.444481, lng: -87.631432};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0e0W1ICK1sCU8cR--3xgrEIOrQEsDrvU&callback=initMap">
+    </script>
+
+</body>
+
+</html>
+  
+  
+  </body>
+
+</html>
