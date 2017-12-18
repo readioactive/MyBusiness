@@ -2,15 +2,17 @@
 <html>
 
   <head>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Montserrat|Unica+One" rel="stylesheet">
   </head>
+
 
   <body>
     <div class="body">
     <nav>
       <a href="main.html" class="btn">Home</a>
-      <a href="contactus.html" class="btn">Contact Us</ahref></a>
+      <a href="contactus.html" class="btn">Contact Us</a>
       <a href="pages/page3.html" class="btn">Products & Services</a>
     </nav>
     <h1>Welcome!</h1>
@@ -36,8 +38,9 @@
 
   </div>
 
+<div id="buttondiv"><button id="hidebutton" onclick="hideOffers()">Hide Offers</button></div>
 
-  <div class="call-outs-container">
+  <div id="specialoffers" div class="call-outs-container">
     <div class="call-out">
       <h4>Welcome Pet Portraits!</h4>
       <p>Treat your beloved feline to a 30% pet photography session!</p>
@@ -48,6 +51,18 @@
       <p>Our photo books are 50%! Fill them with senior pictures, travel photos, anything you like! Available in red, black, and grey.</p>
     </div>
   </div>
+
+<script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
+
 </body>
 
 </html>
